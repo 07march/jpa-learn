@@ -1,0 +1,28 @@
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "name": "Test",
+  "login": "test",
+  "password": "test",
+  "address": {
+    "street" : "malina 40"
+  },
+  "telephone": {
+  "telephone": "123456789"
+  }
+}
+
+###
+
+GET http://localhost:8080/user/find/id?id=5
+
+###
+
+GET http://localhost:8080/user/find/all/name?name=Test
+
+###
+
+POST http://localhost:8080/user/auth?login=test&password=test
+
+###
